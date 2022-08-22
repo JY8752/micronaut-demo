@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: micronaut.data.demo
+testFramework: kotest
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, data, data-jdbc, flyway, gradle, http-client, jackson-databind, jdbc-hikari, kotest, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, mysql, netty-server, readme, shade, test-resources, yaml]

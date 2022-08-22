@@ -1,0 +1,27 @@
+micronaut:
+  application:
+    name: micronautDataDemo
+datasources:
+  default:
+#    url: ${MYSQL_URL}
+    url: jdbc:mysql://localhost:3306/demo?characterEncoding=utf-8&characterSetResults=utf-8&connectionCollation=utf8mb4_bin
+    driverClassName: com.mysql.cj.jdbc.Driver
+    db-type: mysql
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
+#    username: ${MYSQL_USERNAME}
+#    password: ${MYSQL_PASSWORD}
+    username: root
+    password: root
+netty:
+  default:
+    allocator:
+      max-order: 3
+flyway:
+  datasources:
+    default:
+      enabled: true
+jpa:
+  default:
+    entity-scan:
+      packages: 'micronaut.data.demo.data'
